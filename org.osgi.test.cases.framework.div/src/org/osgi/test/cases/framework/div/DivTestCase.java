@@ -4,7 +4,7 @@
  * This source code is owned by Ericsson Radio Systems AB, and is being distributed to OSGi 
  * MEMBERS as MEMBER LICENSED MATERIALS under the terms of section 3.2 of the OSGi MEMBER AGREEMENT. 
  */
-package org.osgi.test.cases.div;
+package org.osgi.test.cases.framework.div;
 
 import org.osgi.test.cases.util.*;
 
@@ -19,6 +19,6 @@ public class DivTestCase extends DefaultTestCase {
 	}
 
 	public String getName() {
-		return "test.cases.div";
+		return "test.cases.framework.div";
 	}
 }

@@ -4,7 +4,7 @@
  * This source code is owned by Ericsson Radio Systems AB, and is being distributed to OSGi 
  * MEMBERS as MEMBER LICENSED MATERIALS under the terms of section 3.2 of the OSGi MEMBER AGREEMENT. 
  */
-package org.osgi.test.cases.div.tb4;
+package org.osgi.test.cases.framework.div.tb4;
 
 import org.osgi.framework.*;
 
@@ -20,7 +20,7 @@ public class DoubleManifestTag implements BundleActivator {
 	 */
 	public void start(BundleContext bc) {
 		// Create a reference to tbc
-		new org.osgi.test.cases.div.tbc.Activator();
+		new org.osgi.test.cases.framework.div.tbc.Activator();
 	}
 
 	/**
