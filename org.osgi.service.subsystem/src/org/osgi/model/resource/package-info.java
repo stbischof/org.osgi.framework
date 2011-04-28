@@ -15,17 +15,17 @@
  */
 
 /**
- * Framework Model Package Version 1.0.
+ * Model Resource Package Version 1.0.
  * 
  * <p>
  * Bundles wishing to use this package must list the package in the
  * Import-Package header of the bundle's manifest. For example:
  * 
  * <pre>
- * Import-Package: org.osgi.framework.model; version=&quot;[1.0,2.0)&quot;
+ * Import-Package: org.osgi.model.resource; version=&quot;[1.0,2.0)&quot;
  * </pre>
  * 
  * @version $Id$
  */
-package org.osgi.framework.model;
+package org.osgi.model.resource;
 

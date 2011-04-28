@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osgi.framework.model;
+package org.osgi.model.resource;
 
 /**
  * A wire connecting a {@link Capability} to a {@link Requirement}.
@@ -39,4 +39,10 @@ public interface Wire<C extends Capability, R extends Requirement> {
 	 * @return The {@link Requirement} for this wire.
 	 */
 	R getRequirement();
+
+	/**
+	 * @return
+	 */
+	Resource<C, R> getProvider();
+	Resource<C, R> getRequirer();
 }
