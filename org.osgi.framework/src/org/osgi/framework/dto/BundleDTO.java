@@ -1,6 +1,6 @@
 /*
  * Copyright (c) OSGi Alliance (2012, 2014). All Rights Reserved.
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,32 +14,42 @@
  * limitations under the License.
  */
 
-package org.osgi.dto.framework.wiring;
+package org.osgi.framework.dto;
 
-import org.osgi.dto.resource.WireDTO;
-import org.osgi.dto.resource.WiringDTO;
+import org.osgi.dto.DTO;
 
 /**
- * Data Transfer Object for a BundleWire.
+ * Data Transfer Object for a Bundle.
  * 
  * <p>
- * {@code BundleWireDTO}s are referenced {@link BundleWiringDTO.NodeDTO}s.
+ * A Bundle can be adapted to provide a {@code BundleDTO} for the Bundle.
  * 
  * @author $Id$
  * @NotThreadSafe
  */
-public class BundleWireDTO extends WireDTO {
+public class BundleDTO extends DTO {
     /**
-     * The identifier of the provider wiring for the bundle wire.
-     * 
-     * @see WiringDTO#id
+     * The bundle's unique identifier.
      */
-    public int providerWiring;
+    public long   id;
 
     /**
-     * The identifier of the requiring wiring for the bundle wire.
-     * 
-     * @see WiringDTO#id
+     * The time when the bundle was last modified.
      */
-    public int requirerWiring;
+    public long   lastModified;
+
+    /**
+     * The bundle's state.
+     */
+    public int    state;
+
+    /**
+     * The bundle's symbolic name.
+     */
+    public String symbolicName;
+
+    /**
+     * The bundle's version.
+     */
+    public String version;
 }

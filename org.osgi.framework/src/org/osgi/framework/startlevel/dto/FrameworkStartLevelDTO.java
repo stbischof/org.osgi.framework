@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osgi.dto.framework.startlevel;
+package org.osgi.framework.startlevel.dto;
 
 import org.osgi.dto.DTO;
 
